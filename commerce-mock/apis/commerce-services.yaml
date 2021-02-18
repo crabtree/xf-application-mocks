@@ -471,9 +471,7 @@ paths:
       - Customer Groups
       summary: Get all subgroups of a customergroup.
       description: |-
-        Returns all customer groups that are direct subgroups of a customergroup.
-
-        To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
+        Returns all customer groups that are direct subgroups of a customergroup. To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
       operationId: getCustomerGroups
       parameters:
       - name: baseSiteId
@@ -524,9 +522,7 @@ paths:
       - Customer Groups
       summary: Creates a new customer group.
       description: |-
-        Creates a new customer group that is a direct subgroup of a customergroup.
-
-        To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
+        Creates a new customer group that is a direct subgroup of a customergroup. To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
       operationId: createCustomerGroup
       consumes:
       - application/xml
@@ -562,9 +558,7 @@ paths:
       - Customer Groups
       summary: Get a specific customer group.
       description: |-
-        Returns a customer group with a specific groupId.
-
-        To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
+        Returns a customer group with a specific groupId. To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
       operationId: getCustomerGroup
       parameters:
       - name: baseSiteId
@@ -605,9 +599,7 @@ paths:
       - Customer Groups
       summary: Sets members for a user group.
       description: |-
-        Sets members for a user group. The list of existing members is overwritten with a new one.
-
-        To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
+        Sets members for a user group. The list of existing members is overwritten with a new one. To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
       operationId: replaceUsersForCustomerGroup
       consumes:
       - application/xml
@@ -649,9 +641,7 @@ paths:
       - Customer Groups
       summary: Assigns user(s) to a customer group.
       description: |-
-        Assigns user(s) to a customer group.
-
-        To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
+        Assigns user(s) to a customer group. To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
       operationId: updateCustomerGroupWithUsers
       consumes:
       - application/xml
@@ -692,9 +682,7 @@ paths:
       - Customer Groups
       summary: Deletes a user from a customer group.
       description: |-
-        Deletes user from a customer group.
-
-        To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
+        Deletes user from a customer group. To try out the methods of the Customer Groups controller, you must authorize a user who belongs to the “customermanagergroup”.
       operationId: removeUsersFromCustomerGroup
       parameters:
       - name: baseSiteId
@@ -2948,9 +2936,7 @@ paths:
       - in: body
         name: address
         description: |-
-          Request body parameter that contains details such as the customer's first name (firstName), the customer's last name (lastName), the customer's title (titleCode), the customer's phone (phone), the country (country.isocode), the first part of the address (line1), the second part of the address (line2), the town (town), the postal code (postalCode), and the region (region.isocode).
-
-          The DTO is in XML or .json format.
+          Request body parameter that contains details such as the customer's first name (firstName), the customer's last name (lastName), the customer's title (titleCode), the customer's phone (phone), the country (country.isocode), the first part of the address (line1), the second part of the address (line2), the town (town), the postal code (postalCode), and the region (region.isocode). The DTO is in XML or .json format.
         required: true
         schema:
           $ref: '#/definitions/Address'
@@ -3152,9 +3138,7 @@ paths:
       - Extended Carts
       summary: Get consolidated pickup options.
       description: |-
-        Returns a list of stores that have all the pick-up items in stock.
-
-        Note, if there are no stores that have all the pick up items in stock, or all items are already set to the same pick up location, the response returns an empty list.
+        Returns a list of stores that have all the pick-up items in stock. Note, if there are no stores that have all the pick up items in stock, or all items are already set to the same pick up location, the response returns an empty list.
       operationId: getConsolidatedPickupLocations
       parameters:
       - name: baseSiteId
@@ -3201,9 +3185,7 @@ paths:
       - Extended Carts
       summary: Handles the consolidating pickup locations.
       description: |-
-        Specifies one store location where all items will be picked up.
-
-        Note, if any of the items are not available at the specified location, these items are removed from the cart.
+        Specifies one store location where all items will be picked up. Note, if any of the items are not available at the specified location, these items are removed from the cart.
       operationId: createConsolidatedPickupLocation
       consumes:
       - application/json
@@ -3571,9 +3553,7 @@ paths:
       - in: body
         name: entry
         description: |-
-          Request body parameter that contains details such as the product code (product.code), the quantity of product (quantity), and the pickup store name (deliveryPointOfService.name).
-
-          The DTO is in XML or .json format.
+          Request body parameter that contains details such as the product code (product.code), the quantity of product (quantity), and the pickup store name (deliveryPointOfService.name). The DTO is in XML or .json format.
         required: true
         schema:
           $ref: '#/definitions/OrderEntry'
@@ -3697,9 +3677,7 @@ paths:
       - in: body
         name: entry
         description: |-
-          Request body parameter that contains details such as the quantity of product (quantity), and the pickup store name (deliveryPointOfService.name)
-
-          The DTO is in XML or .json format.
+          Request body parameter that contains details such as the quantity of product (quantity), and the pickup store name (deliveryPointOfService.name) The DTO is in XML or .json format.
         required: true
         schema:
           $ref: '#/definitions/OrderEntry'
@@ -3814,9 +3792,7 @@ paths:
       - in: body
         name: entry
         description: |-
-          Request body parameter that contains details such as the quantity of product (quantity), and the pickup store name (deliveryPointOfService.name)
-
-          The DTO is in XML or .json format.
+          Request body parameter that contains details such as the quantity of product (quantity), and the pickup store name (deliveryPointOfService.name) The DTO is in XML or .json format.
         required: true
         schema:
           $ref: '#/definitions/OrderEntry'
@@ -3982,9 +3958,7 @@ paths:
       - Extended Carts
       summary: Get information about create subscription request results
       description: |-
-        Returns information related to creating subscription request results. If there is no response from the payment provider, a "202 Accepted" status is returned. If the subscription is created successfully, the payment details are returned. Otherwise, an error response is returned.
-
-        Note, the “Try it out” button is not enabled for this method (always returns an error) because the Extended Carts Controller handles parameters differently, depending on which payment provider is used. For more information about this controller, please refer to the “acceleratorwebservicesaddon AddOn” documentation on help.hybris.com.
+        Returns information related to creating subscription request results. If there is no response from the payment provider, a "202 Accepted" status is returned. If the subscription is created successfully, the payment details are returned. Otherwise, an error response is returned. Note, the “Try it out” button is not enabled for this method (always returns an error) because the Extended Carts Controller handles parameters differently, depending on which payment provider is used. For more information about this controller, please refer to the “acceleratorwebservicesaddon AddOn” documentation on help.hybris.com.
       operationId: getSopPaymentResponse
       parameters:
       - name: baseSiteId
@@ -4031,9 +4005,7 @@ paths:
       - Extended Carts
       summary: Handles response from payment provider and create payment details
       description: |-
-        Handles the response from the payment provider and creates payment details.
-
-        Note, the “Try it out” button is not enabled for this method (always returns an error) because the Extended Carts Controller handles parameters differently, depending on which payment provider is used. For more information about this controller, please refer to the “acceleratorwebservicesaddon AddOn” documentation on help.hybris.com.
+        Handles the response from the payment provider and creates payment details. Note, the “Try it out” button is not enabled for this method (always returns an error) because the Extended Carts Controller handles parameters differently, depending on which payment provider is used. For more information about this controller, please refer to the “acceleratorwebservicesaddon AddOn” documentation on help.hybris.com.
       operationId: doHandleSopPaymentResponse
       consumes:
       - application/json
@@ -4155,9 +4127,7 @@ paths:
       - in: body
         name: paymentDetails
         description: |-
-          Request body parameter that contains details such as the name on the card (accountHolderName), the card number (cardNumber), the card type (cardType.code), the month of the expiry date (expiryMonth), the year of the expiry date (expiryYear), whether the payment details should be saved (saved), whether the payment details should be set as default (defaultPaymentInfo), and the billing address (billingAddress.firstName, billingAddress.lastName, billingAddress.titleCode, billingAddress.country.isocode, billingAddress.line1, billingAddress.line2, billingAddress.town, billingAddress.postalCode, billingAddress.region.isocode)
-
-          The DTO is in XML or .json format.
+          Request body parameter that contains details such as the name on the card (accountHolderName), the card number (cardNumber), the card type (cardType.code), the month of the expiry date (expiryMonth), the year of the expiry date (expiryYear), whether the payment details should be saved (saved), whether the payment details should be set as default (defaultPaymentInfo), and the billing address (billingAddress.firstName, billingAddress.lastName, billingAddress.titleCode, billingAddress.country.isocode, billingAddress.line1, billingAddress.line2, billingAddress.town, billingAddress.postalCode, billingAddress.region.isocode) The DTO is in XML or .json format.
         required: true
         schema:
           $ref: '#/definitions/PaymentDetails'
